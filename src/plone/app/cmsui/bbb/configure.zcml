@@ -15,16 +15,6 @@
     <include package="plone.app.workflow" />
 
     <browser:viewlet
-        name="plone.cmsui.menulink"
-        for="*"
-        layer="..interfaces.ICMSUILayer"
-        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-        template="menulink.pt"
-        class=".menulink.MenuLinkViewlet"
-        permission="plone.ViewCMSUI"
-        />
-
-    <browser:viewlet
         name="plone.contentviews"
         for="*"
         layer="..interfaces.ICMSUILayer"
