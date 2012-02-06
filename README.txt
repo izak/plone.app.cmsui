@@ -42,7 +42,7 @@ Using with Diazo
 If you are using Diazo and plone.app.theming, you can enable the CMS UI in
 your site by including the following rule::
 
-    <before css:theme-children="body" css:content="#plone-cmsui-trigger" />
+    <before css:theme-children="body" css:content="#plone-toolbar-trigger" />
 
 Theme and resource bundles
 ==========================
