@@ -32,24 +32,6 @@
         permission="zope.Public"
         />
     
-    <browser:page
-        name="folder_contents"
-        for="*"
-        layer="..interfaces.ICMSUILayer"
-        class="..structure.StructureView"
-        template="../templates/structure.pt"
-        permission="cmf.ListFolderContents"
-        />
-    
-    <browser:page
-        name="sharing"
-        for="*"
-        class="..sharing.SharingView"
-        template="../templates/sharing.pt"
-        permission="plone.DelegateRoles"
-        layer="..interfaces.ICMSUILayer"
-        />
-
     <browser:viewlet
         name="plone.personal_bar"
         for="*"

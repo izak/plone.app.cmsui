@@ -68,49 +68,6 @@
         permission="plone.ViewCMSUI"
         />
 
-    <!-- Folder contents overlay -->
-
-    <browser:page
-        name="cmsui-structure"
-        for="*"
-        class=".structure.StructureView"
-        template="templates/structure.pt"
-        permission="plone.ViewCMSUI"
-        />
-    <browser:page
-        name="folder_moveitem"
-        for="*"
-        class=".structure.MoveItem"
-        permission="plone.ViewCMSUI"
-        layer=".interfaces.ICMSUILayer"
-        />
-
-    <!-- Sharing overlay -->
-    <browser:page
-        name="cmsui-sharing"
-        for="*"
-        class=".sharing.SharingView"
-        template="templates/sharing.pt"
-        permission="plone.DelegateRoles"
-        />
-
-    <!-- "Add new" menu overlay -->
-
-    <browser:page
-        name="cmsui-add-content"
-        for="*"
-        class=".addmenu.AddMenu"
-        template="templates/add-menu.pt"
-        permission="plone.ViewCMSUI"
-        />
-
-    <browser:page
-        name="cmsui-add-content-form"
-        for="*"
-        class=".addmenu.AddNewContentForm"
-        permission="plone.ViewCMSUI"
-        />
-
     <!-- Lock info overlay -->
 
     <browser:page
@@ -152,21 +109,5 @@
       <implements interface=".interfaces.IQuickUploadCapable" />
     </class>
 </configure>
-<!-- Quick Upload View -->
      
-<browser:page
-    for=".interfaces.IQuickUploadCapable"
-    name="quick_upload"
-    class=".fileupload.QuickUploadView"
-    template="templates/file-upload.pt"
-    permission="cmf.AddPortalContent"
-    layer=".interfaces.ICMSUILayer"/>
-  
-<browser:page
-    for="*"
-    name="quick_upload_file"
-    class=".fileupload.QuickUploadFile"
-    permission="cmf.AddPortalContent"
-    layer=".interfaces.ICMSUILayer"/>
-
 </configure>

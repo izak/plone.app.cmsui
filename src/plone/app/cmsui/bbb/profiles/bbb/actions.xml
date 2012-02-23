@@ -1,15 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_actions" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
-    <object name="object" meta_type="CMF Action Category">
-        <object name="folderContents" i18n:domain="plone">
-            <property name="visible">False</property>
-        </object>
-        <object name="local_roles" i18n:domain="plone">
-            <property name="visible">False</property>
-        </object>
-    </object>
-
     <object name="site_actions" meta_type="CMF Action Category">
         <object name="plone_setup" purge="false">
             <property name="visible">False</property>
